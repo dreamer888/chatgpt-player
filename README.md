@@ -22,6 +22,7 @@ python ，tkinter ， chatgtp，openAI， TTS
 #### 使用说明
 
 参考视频
+有文档 ，
 
 #### 联系方式：
 
