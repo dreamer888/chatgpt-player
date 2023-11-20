@@ -11,7 +11,7 @@
 
 ![输入图片说明](document/images/gpt-%E5%9B%BE%E7%89%87.png)
 
-![输入图片说明](document/%E4%BB%8E%E7%BC%96%E8%BE%91%E6%A1%86%E6%92%AD%E6%94%BE.png)
+![输入图片说明](document/images/%E4%BB%8E%E7%BC%96%E8%BE%91%E6%A1%86%E6%92%AD%E6%94%BE.png)
 
 ![输入图片说明](document/images/%E8%A7%86%E9%A2%91.png)
 
