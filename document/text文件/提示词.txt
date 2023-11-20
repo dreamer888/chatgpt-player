@@ -1,0 +1,35 @@
+===========不用编程，如何通过跟chatgtp聊天， 制作一款基于gpt应用？======
+假定本地的python工作环境已经安装好了，python版本为3.10以上，需要安装的库或者包，我会根据你的提示去安装的，请你用python写一个程序，实现以下约定功能：
+
+1、创建一个窗口，窗口宽度width=360像素，窗口高度height为600像素，窗口标题为“CHAT-GPT对话生成应用程序” 。
+
+2、在窗口上面放置一个编辑框组件，组件名称为inputText，组件宽度等同于窗口宽度，高度可以输入3行16磅的文字，，输入文字字体大小为9磅，用于用户输入文本，或者粘贴文本，该编辑框带垂直方向的滚动条。
+
+3、在窗口放置一个按钮组件，组件名称为playFromText，组件标题为“从编辑框播放” ，点击按钮,生成一个子线程，从inputText中提取文本，调用文字转化为语音功能函数，开始播放语音，播放完毕注意释放调用使用的资源。请使用中文播放语音，不要使用英语播放。在窗口上放置下拉列表框，使用户可以选择什么声音。
+
+4、在窗口上放置一个滑动组件，组件名称为voiceSpeed,用于调节语音播放速度，本程序中的语音播放速度可以调节。
+
+5、在窗口上放置一个滑动组件，组件名称为animateSpeed，用于调节animate显示速度，本程序中的语音播放速度可以调节。
+
+6、在窗口上放置一个组件，组件名称为animationStyle，用于调节animate的动画风格，让动画看起来更有趣，更多的选择。
+
+7、在窗口上放置一个按钮组件，组件名称为background，组件标题为“切换背景” ，点击按钮，从本地电脑上传一张图片作为窗口背景。
+
+8、窗口上面放画组件，组件名称为animate，组件标题为“动画显示文字” ,组件宽度等同于窗口宽度 ，高度为80像素，该组件用于动态显示文字，  显示文字的的时候，要像打字机那样一个一个的打出来，有动画的效果，从左边向右边打字。
+
+9、当用户点击按钮playFromText的时候，组件animate播放组件inputText里面的文字内容；同时调用文字转化为语音功能函数，播放inputText里面的文字内容 ，播放完毕注意释放调用使用的资源；为了不影响界面的流畅度， 本功能需要使用子线程技术。
+
+10、在窗口放置一个按钮组件，组件名称为playFromFile，组件标题为“从文件播放” ，点击按钮, 从本地电脑打开一个文本文件，从文件中提取文本，使用组件animate显示文本内容；同时调用文字转化为语音功能函数，开始播放语音，播放完毕注意释放调用使用的资源，为了不影响界面的流畅度， 本功能需要使用子线程技术。
+
+11、在窗口上放置一个按钮组件，组件名称为add_pictures_button，组件标题为“添加图片轮播” ，点击按钮，从本地电脑上传一张图片进入轮播队列。
+12、在窗口上放置一个按钮组件，组件名称为upload_video_button，组件标题为“上传视频” ，点击按钮，从本地电脑上传一个视频并播放。
+
+13、 添加一个组件可以轮播图片，组件名称为playPictures，图片来源是用户从本地电脑上传。组件playPictures位于窗口最后一行，占满一行 。
+
+
+14、 添加一个组件播放视频，组件名称为playvideo，视频来源是用户从本地电脑上传。组件playvideo位于窗口最后一行，占满一行 。
+组件playvideo和playPictures位置重合，当点击add_pictures_button时候显示playPictures，同时 playvideo隐藏并关闭视频；当点击upload_video_button时候显示playvideo，playvideo激活并播放，playPictures则处于隐藏状态。
+
+15、以上窗口里面的组件重新布局以下， 顺序依次为： inputText，background，add_pictures_button，upload_video_button，playFromText，playFromFile，，animationStyle，voiceSpeed，animateSpeed，playFromFile，animate,playPictures，playvideo。
+
+16、使用grid布局， 不要使用pack布局 。inputText宽度与窗口宽度相同， 其中 将playFromText 和 playFromFile 放置相同行中，各占窗口宽度的一半 。background和animationStyle 同一行，各占窗口宽度一半. animateSpeed和voiceSpeed 同一行，各占窗口宽度一半。注意：你显示的窗口总宽度为width=360像素，可以把 playFromText，playFromFile在同一行全部显示出来了，playFromText占大约180像素，playFromFile占大约180像素  ， 不需要拖动窗口就能全部显示出来了 。 
