@@ -1,4 +1,4 @@
-# chatgtp多媒体制作软件
+# 通过chatgtp制作多媒体制作软件
 
 #### 介绍
 
@@ -23,6 +23,7 @@ python ，tkinter ， chatgtp，openAI， TTS
 
 参考视频
 有文档 ，
+exe/dist 下面有打包的exe文件
 
 #### 联系方式：
 
