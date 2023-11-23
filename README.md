@@ -25,6 +25,8 @@ python ，tkinter ， chatgtp，openAI， TTS
 有文档 ，
 exe/dist 下面有打包的exe文件
 
+程序主文件是  gpt.py
+
 #### 联系方式：
 
 QQ 75039960，
